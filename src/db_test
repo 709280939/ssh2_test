@@ -1,0 +1,25 @@
+/*
+MySQL Backup
+Source Server Version: 5.5.27
+Source Database: db_test
+Date: 2016/5/1 13:13:28
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+--  Table structure for `p_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `p_user`;
+CREATE TABLE `p_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `age` int(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records 
+-- ----------------------------
+INSERT INTO `p_user` VALUES ('1','张三','123456','23');
